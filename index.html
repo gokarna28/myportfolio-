@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Theme</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .bg-red-300-transparent {
+            background-color: rgba(252, 165, 165, 0.5);
+            /* Adjust the opacity as needed */
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 p-0">
+    <!--Header section-->
+    <header class="bg-slate-500-transparent flex items-center p-2 justify-around" id="header">
+        <div>
+            <img class="w-20 rounded-full" id="logo_img" src="./images/logo.png" alt="logo image" />
+        </div>
+        <nav class="md:p-0 p-4 w-screen md:w-auto md:h-8n">
+            <div class="text-4xl font-medium flex justify-end">
+                <i class="fa-solid fa-bars cursor-pointer md:hidden" onclick="showNav()" id="nav_show"></i>
+                <i class="fa-regular fa-circle-xmark cursor-pointer hidden" id="nav_close" onclick="hideNav()"></i>
+            </div>
+            <ul class="md:flex md:mt-0 text-2xl mt-4 hidden" id="nav_menu">
+                <li class="md:ml-6 transition-all duration-300 p-4  hover:border-b-2">
+                    <a href="#">Home</a>
+                </li>
+                <li class="md:ml-6 transition-all duration-300 p-3 hover:border-b-2">
+                    <a href="#">About</a>
+                </li>
+                <li class="md:ml-6 transition-all duration-300 p-3 hover:border-b-2">
+                    <a href="#">Service</a>
+                </li>
+                <li class="md:ml-6 transition-all duration-300 p-3 hover:border-b-2">
+                    <a href="#">Skill</a>
+                </li>
+                <li class="md:ml-6 transition-all duration-300 p-3 hover:border-b-2">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--main section-->
+    <div class="md:pt-5 md:pl-[100px] md:flex md:justify-around items-center p-2 md:p-0">
+        <div class="md:hidden flex justify-end">
+            <img class="min-w-40 rounded-l-full" src="./images/profile.jpg" alt="profile img" />
+        </div>
+        <div class="md:w-[600px]">
+            <div>
+                <p class="md:text-6xl font-mono text-4xl font-bold">Gokarna Chaudhary</p>
+                <p class="md:text-3xl md:mt-1 uppercase tracking-widest text-xl">Web Developer</p>
+                <p class="md:text-xl md:mt-2 text-slate-700 text-sm flex-wrap w-42 md:w-3/4">I'm creative web
+                    developer in Nepal, and I'm very passonate
+                    and dedicated to my work.</p>
+            </div>
+            <button class="bg-slate-700 mt-2 text-xl text-white px-4 py-2 rounded-2xl hover:bg-slate-800    ,">Hire
+                Me</button>
+        </div>
+        <div class="hidden md:flex justify-center w-2/5">
+            <img class="rounded-l-full rounded-tr-full" src="./images/profile.jpg" alt="profile img" />
+        </div>
+    </div>
+
+    <!--About section-->
+    <div class="mt-10 md:mt-44 md:pt-4 bg-slate-50 flex-col items-center">
+        <div class="flex-col items-center">
+            <h1 class="md:text-4xl text-3xl font-semibold flex justify-center">About Me</h1>
+            <p class="flex justify-center md:text-xl text-sm md:mt-2">My introduction</p>
+        </div>
+
+        <div class="md:flex justify-around md:pt-8 md:pl-[100px]">
+            <div class="hidden md:flex w-1/4 h-1/4">
+                <img class="rounded-2xl" src="./images/about.png" alt="about imag">
+            </div>
+            <div class="p-2 md:w-2/4">
+                <div class="flex items-center justify-around">
+                    <div
+                        class="bg-white ml-1 min-w-24 h-24 md:w-48 md:h-44 p-1 rounded-lg flex-col flex items-center border-solid border-2 border-balck">
+                        <i class="fa-solid fa-medal flex flex-col items-center mt-2 md:text-4xl"></i>
+                        <h2 class="font-medium md:text-2xl md:mt-2">Experience</h2>
+                        <p class="text-sm md:text-xl md:mt-2">8 + Years</p>
+                    </div>
+                    <div
+                        class="bg-white ml-1 min-w-24 h-24 md:w-48 md:h-44 p-1 rounded-lg flex-col flex items-center border-solid border-2 border-balck">
+                        <i class="fa-solid fa-suitcase mt-2 md:text-4xl"></i>
+                        <h2 class="font-medium md:text-2xl md:mt-2">Completed</h2>
+                        <p class="text-sm md:text-xl md:mt-2">48 + Projects</p>
+                    </div>
+                    <div
+                        class="bg-white ml-1 min-w-24 h-24 md:w-48 md:h-44 p-1 rounded-lg flex-col flex items-center border-solid border-2 border-balck">
+                        <i class="fa-solid fa-headset mt-2 md:text-4xl"></i>
+                        <h2 class="font-medium md:text-2xl md:mt-2">Support</h2>
+                        <p class="text-sm md:text-xl md:mt-2">Online 24/7</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-sm mt-2 flex-wrap md:text-xl text-slate-700">Frontend developer, I create web pages with
+                        UI/UX user interface, I have years of experience and many clients are
+                        happy with the projects carried aut.
+                    </p>
+                </div>
+                <button class="bg-slate-700 hover:bg-slate-800 text-white px-4 py-2 rounded-2xl mt-2">Download CV</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Skill section-->
+        <div class="mt-10">
+            <div class="flex flex-col items-center">
+                <h1 class="text-4xl font-semibold">Skills</h1>
+                <p class="text-sm mt-1">My technical level</p>
+            </div>
+
+            <div class="flex justify-around mt-8">
+                <div class="bg-white rounded-lg border-solid border-2 border-balck w-2/5 flex flex-col items-center">
+                    <h2 class="text-xl font-medium">Frontend</h2>
+                    <ul class="flex flex-wrap mt-4">
+                        <li class="flex items-center my-2 mx-6"><i class="fa-solid fa-circle-check mr-2"></i><p>HTML</p></li>
+                        <li class="flex items-center my-2 mx-6"><i class="fa-solid fa-circle-check mr-2"></i><p>CSS</p></li>
+                        <li class="flex items-center my-2 mx-6"><i class="fa-solid fa-circle-check mr-2"></i><p>JavaScript</p></li>
+                        <li class="flex items-center my-2 mx-6"><i class="fa-solid fa-circle-check mr-2"></i><p>React</p></li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg border-solid border-2 border-balck w-2/5 flex flex-col items-center">
+                    <h2 class="text-xl font-medium">Frontend</h2>
+                    <ul class="flex flex-wrap mt-4">
+                        <li class="flex items-center my-2 mx-6"><i class="fa-solid fa-circle-check mr-2"></i><p>PHP</p></li>
+                        <li class="flex items-center my-2 mx-6"><i class="fa-solid fa-circle-check mr-2"></i><p>Node js</p></li>
+                        <li class="flex items-center my-2 mx-6"><i class="fa-solid fa-circle-check mr-2"></i><p>MYSQL</p></li>
+                        <li class="flex items-center my-2 mx-6"><i class="fa-solid fa-circle-check mr-2"></i><p>SQL</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!--Footer section-->
+    <div></div>
+    <script src="script.js"></script>
+    <script></script>
+</body>
+
+</html>
